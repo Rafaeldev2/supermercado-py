@@ -1,5 +1,5 @@
 while True:
-    #Início do programa
+    #Início do programaa
     print("""
             ============ MENU ===============
         
