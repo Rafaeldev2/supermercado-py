@@ -1,3 +1,5 @@
+sacola = []
+
 while True:
     #Início do programa
     print("""
@@ -38,7 +40,17 @@ while True:
            
             Digite o ID do produto que deseja comprar
                   
-                  1 - 
+                  01 - BANANA: R$ 5.00
+                  02 - MAÇÃ: R$ 3.00
+                  03 - BERGAMOTA: R$ 4.00
+                  04 - UVA: R$ 5.00
+                  05 - PÃO: R$ 2.50
+                  06 - LEITE: R$ 7.00
+                  07 - MEL: R$ 6.90
+                  08 - SALAME: R$ 10.00
+                  09 - QUEIJO: R$ 9.50
+                  10 - PRESUNTO: R$ 8.50
+
             """)
             while True:                
                 #Garantir que o usuário vai digitar uma opção válida
@@ -93,3 +105,5 @@ while True:
     
     if x == 3: #Esse if é para sair do programa
         break
+
+
