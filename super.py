@@ -7,9 +7,9 @@ while True:
 
         Antes de começarmos, você é cliente ou funcionário? (Por favor, digite apenas números: )
 
-        1- Cliente
+        1- Começar uma compra
         
-        2- Funcionário
+        2- Ir para o carrinho
 
         3- Sair
         
@@ -26,19 +26,19 @@ while True:
         except ValueError:
             print("Opção inválida, por favor tente novamente")
             
+
+
     if x == 1: #MENU do cliente
         while True:
             print("""
-                ============ CLIENTE ===============
+                ============ LISTA DE PRODUTOS ===============
             
             Olá cliente, o que deseja?
 
-            1- Comprar
-            
-            2- Ver minha lista
-
-            3- Voltar
-            
+           
+            Digite o ID do produto que deseja comprar
+                  
+                  1 - 
             """)
             while True:                
                 #Garantir que o usuário vai digitar uma opção válida
@@ -56,16 +56,18 @@ while True:
             elif xc == 3:
                 break
         
+
+
     if x == 2: #MENU do funcionário
         while True:
             print("""
-                ============ FUNCIONÁRIO ===============
+                ============ CARRINHO ===============
             
             Olá colaborador, o que deseja?
 
-            1- Verificar estoque
+            1- Verificar itens da compra
             
-            2- Aumentar estoque
+            2- Continuar comprando
 
             3- Voltar
             
@@ -84,8 +86,10 @@ while True:
                     print("Opção inválida, por favor tente novamente")
             if xf == 1:
                 1+1
+                
             elif xf == 3:
                 break
+            
     
     if x == 3: #Esse if é para sair do programa
         break
