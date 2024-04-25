@@ -1,3 +1,4 @@
+escolha = 5
 sacola = []
 
 while True:
@@ -16,6 +17,7 @@ while True:
         3- Sair
         
         """)
+    
     while True:                
         #Garantir que o usuário vai digitar uma opção válida
         try:         
@@ -40,22 +42,24 @@ while True:
            
             Digite o ID do produto que deseja comprar
                   
-                  01 - BANANA: R$ 5.00
-                  02 - MAÇÃ: R$ 3.00
-                  03 - BERGAMOTA: R$ 4.00
-                  04 - UVA: R$ 5.00
-                  05 - PÃO: R$ 2.50
-                  06 - LEITE: R$ 7.00
-                  07 - MEL: R$ 6.90
-                  08 - SALAME: R$ 10.00
-                  09 - QUEIJO: R$ 9.50
+                   1 - BANANA: R$ 5.00
+                   2 - MAÇÃ: R$ 3.00
+                   3 - BERGAMOTA: R$ 4.00
+                   4 - UVA: R$ 5.00
+                   5 - PÃO: R$ 2.50
+                   6 - LEITE: R$ 7.00
+                   7 - MEL: R$ 6.90
+                   8 - SALAME: R$ 10.00
+                   9 - QUEIJO: R$ 9.50
                   10 - PRESUNTO: R$ 8.50
 
             """)
+
+
             while True:                
                 #Garantir que o usuário vai digitar uma opção válida
                 try:         
-                    xc = int(input("Digite aqui: "))
+                    xc = int(input("Escolha o ID do produto: "))
                     
                     if xc == 1 or xc == 2 or xc == 3:
                         break            
@@ -67,10 +71,12 @@ while True:
                 1+1
             elif xc == 3:
                 break
-        
+
+            quantidade=input("Escolha a quantidade do produto:")
+            sacola.append(["",xc,quantidade,0])
 
 
-    if x == 2: #MENU do funcionário
+    if x == 2: #MENU do carrinho
         while True:
             print("""
                 ============ CARRINHO ===============
@@ -84,11 +90,16 @@ while True:
             3- Voltar
             
             """)
+            contador=0
+            for produto in sacola:
+
+                print(contador,"#",produto[0]," ",produto[1],"-",produto[2])
+                contador=contador+1
         
             while True:            
                 #Garantir que o usuário vai digitar uma opção válida
                 try:         
-                    xf = int(input("Digite aqui: "))
+                    xf = float(input("Digite aqui: "))
                             
                     if xf == 1 or xf == 2 or xf == 3:
                         break            
@@ -105,5 +116,3 @@ while True:
     
     if x == 3: #Esse if é para sair do programa
         break
-
-
